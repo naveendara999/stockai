@@ -1,0 +1,148 @@
+.header {
+  background: #fff;
+  padding: 0.3rem 0px;
+  box-shadow: 0.4px -1.4px 3px rgb(0, 25, 9);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  .navbar-toggler {
+    background-color: #fe8c00;
+  }
+  .navbar-collapse {
+    margin-top: 1rem;
+    .nav-item {
+      margin-top: 8px;
+    }
+  }
+}
+.buttonLink {
+  display: inline;
+  border: 1px solid #fe8c00;
+  color: #fe8c00 !important;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: transparent;
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-right: 32px;
+  &:hover,
+  &:active {
+    background: #fe8c00;
+    border-color: #fff;
+    color: #fff !important;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
+}
+.li {
+  display: block;
+  font-weight: 700;
+
+  margin-bottom: 15px;
+  // border-left: 2px solid #fe8c00;
+  padding-left: 0px;
+  .i {
+    color: #fe8c00;
+    display: inline-block;
+    margin-right: 8px;
+  }
+  span {
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    padding-left: 20px;
+  }
+}
+.playicon {
+  animation: MoveUpDown 6s linear infinite;
+  animation-name: MoveUpDown;
+  position: absolute;
+  top: calc(50% - 46px);
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0px auto;
+  display: block;
+  box-shadow: 0px 0px 15px #888;
+  border-radius: 50%;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.footer {
+  padding: 50px 0;
+  background: #222;
+  display: block;
+  .disclaimer {
+    color: #899ca6;
+  }
+  .small {
+    font-size: 92%;
+    font-weight: 400;
+  }
+  .marginRow30 {
+    margin-top: 30px;
+  }
+  .footerlist {
+    border-top: 1px solid #3e4241;
+    border-bottom: 1px solid #3e4241;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    ul {
+      padding: 0;
+      text-align: left;
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+      li {
+        display: inline;
+        color: #899ca6;
+        cursor: pointer;
+        a {
+          color: #899ca6;
+          display: inline-block;
+          text-decoration: none;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+  .copyright p {
+    color: #899ca6;
+    font-size: 16px;
+  }
+  .socialmedia {
+    color: #fff;
+    text-align: end;
+    ul {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      gap: 0.5rem;
+      justify-content: flex-end;
+      li {
+        a {
+          display: inline-block;
+          background: #333;
+          color: #899ca6;
+          width: 30px;
+          height: 30px;
+          text-align: center;
+          border-radius: 50%;
+          line-height: 30px;
+          margin-left: 5px;
+        }
+        svg {
+          fill: #899ca6;
+        }
+      }
+    }
+  }
+}
