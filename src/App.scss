@@ -7,13 +7,15 @@
   right: 0;
   left: 0;
   z-index: 1030;
-  .navbar-toggler {
-    background-color: #fe8c00;
-  }
-  .navbar-collapse {
-    margin-top: 1rem;
-    .nav-item {
-      margin-top: 8px;
+  @media (max-width: 670px) {
+    .navbar-toggler {
+      background-color: #fe8c00;
+    }
+    .navbar-collapse {
+      margin-top: 1rem;
+      .nav-item {
+        margin-top: 8px;
+      }
     }
   }
 }
@@ -29,7 +31,7 @@
   line-height: 1.6;
   font-weight: 400;
   letter-spacing: 1px;
-  margin-right: 32px;
+  margin-right: 1px;
   &:hover,
   &:active {
     background: #fe8c00;
@@ -142,6 +144,64 @@
         svg {
           fill: #899ca6;
         }
+      }
+    }
+  }
+}
+.login,
+.signup {
+  overflow-x: hidden;
+  min-height: 100vh;
+  background-color: #ebeef7;
+  .login_container {
+    height: calc(100vh - 46px);
+    padding: 10px 0;
+    display: grid;
+    place-items: center;
+    .auth-card {
+      width: 450px;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+      h3 {
+        font-size: 1.75rem;
+      }
+      .logo_image {
+        text-align: center;
+        img {
+          width: 180px;
+          object-fit: contain;
+        }
+      }
+      .subtitle {
+        font-weight: 600;
+        a {
+          color: #0073dd !important;
+          text-decoration: none;
+          background-color: initial;
+        }
+      }
+      #exampleEmail,
+      #examplePassword,
+      #displayname,
+      #phonenumber {
+        height: 48px !important;
+      }
+      .btn-lg {
+        width: 100%;
+      }
+      .agreeto {
+        font-size: 12px;
+        font-weight: 500;
+        font-style: italic;
+        text-align: center;
+        padding: 5px 10px;
+        margin-bottom: 1rem;
+      }
+      .capcha {
+        text-align: center;
+        font-size: 10px;
+        line-height: 15px;
       }
     }
   }

@@ -5,16 +5,29 @@ import Helpsection from './Helpsection';
 import { Headers } from './Headers';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Login from './components/Login';
+import Signup from './components/Signup';
 
 function App() {
   return (
-    <div className='App'>
-      <Header />
-      <Banner />
-      <CarasoulSection />
-      <Helpsection />
-      <Footer />
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path='/'>
+          <Header />
+          <Banner />
+          <CarasoulSection />
+          <Helpsection />
+          <Footer />
+        </Route>
+        <Route path='/login'>
+          <Login />
+        </Route>
+        <Route path='/signup'>
+          <Signup />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
