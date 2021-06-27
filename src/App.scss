@@ -1,3 +1,12 @@
+// ****************--HEADER--**************
+body {
+  font-family: 'Open Sans', 'sans-serif';
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .header {
   background: #fff;
   padding: 0.3rem 0px;
@@ -7,18 +16,73 @@
   right: 0;
   left: 0;
   z-index: 1030;
+
+  .nav-item {
+    a {
+      text-decoration: none;
+      color: #899ca6;
+      padding: 0 0.5rem;
+      font-family: 'Open Sans', 'sans-serif';
+      font-size: 1.1rem;
+      font-weight: 300;
+      line-height: 1.5;
+      text-align: left;
+    }
+  }
   @media (max-width: 670px) {
     .navbar-toggler {
-      background-color: #fe8c00;
+      background-color: #fe8c00 !important;
+      border-color: none;
+      color: #fff;
     }
     .navbar-collapse {
       margin-top: 1rem;
+      padding: 0 1.5rem;
       .nav-item {
         margin-top: 8px;
       }
     }
   }
+  //background-color: #f2f2f2;
+  .subnav {
+    width: 100%;
+    background-color: #f2f2f2;
+    .left {
+      flex: 0 0 75%;
+      width: 75%;
+    }
+    .closeofdate {
+      letter-spacing: 3px;
+      color: #000;
+      span {
+        font-size: 1rem;
+        background-color: #ff0;
+        color: #000;
+        display: inline-block;
+        padding: 0.25em 0.4em;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: initial;
+        border-radius: 0.25rem;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+    }
+    .right {
+      flex: 0 0 25%;
+      width: 25%;
+      text-align: right;
+    }
+  }
 }
+//hide modal button
+.close {
+  display: none;
+}
+///////
+
 .buttonLink {
   display: inline;
   border: 1px solid #fe8c00;
@@ -61,6 +125,8 @@
     padding-left: 20px;
   }
 }
+
+// ****************--HEADER--**************
 .playicon {
   animation: MoveUpDown 6s linear infinite;
   animation-name: MoveUpDown;
@@ -78,6 +144,9 @@
   max-width: 100%;
   height: auto;
 }
+
+// ****************--HEADER--**************
+
 .footer {
   padding: 50px 0;
   background: #222;
@@ -148,6 +217,9 @@
     }
   }
 }
+
+// ****************--HEADER--**************
+
 .login,
 .signup {
   overflow-x: hidden;
@@ -203,6 +275,146 @@
         font-size: 10px;
         line-height: 15px;
       }
+    }
+  }
+}
+
+//TABS SECTION
+.toppicks {
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active {
+    color: #0d6efd;
+    background-color: #fff;
+    border: transparent;
+    border-bottom: 3px solid #0d6efd !important;
+  }
+
+  .nav-tabs .nav-link:focus,
+  .nav-tabs .nav-link:hover {
+    border: transparent;
+    border-bottom: 3px solid #dee2e6;
+  }
+  .tab_slogen {
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+    ul {
+      margin: 0 !important;
+    }
+    li {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      text-align: left;
+      word-wrap: break-word;
+    }
+  }
+
+  h2 {
+    font-size: 2rem !important;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  //favorites' TAB
+  .favorites {
+    border: 1px solid #dee2e6;
+    text-align: center;
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+    }
+  }
+  .portfolio {
+    border: 1px solid #dee2e6;
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+    }
+  }
+  .open_positions {
+    border: 1px solid #dee2e6;
+    text-align: center;
+    a {
+      text-decoration: none;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+    }
+  }
+
+  // IDEASS PAGE
+  .trading_ideas {
+    border: 1px solid #dee2e6;
+
+    a {
+      text-decoration: none;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+    }
+    ol {
+      li {
+        list-style: lower-alpha;
+        line-height: 20px;
+        padding-left: 9px;
+        text-align: left;
+        color: #999;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+/// Transaction page
+.transaction {
+  .left {
+    border-right: 1px solid #333;
+    h2 {
+      font-weight: 300;
+      font-size: 28px;
+      line-height: 2rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      max-width: 80%;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+    .platform {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+  .right {
+    padding-left: 2rem;
+    ol {
+      li {
+        list-style: symbols;
+        line-height: 20px;
+        padding-left: 9px;
+        text-align: left;
+        color: #999;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 1rem;
+      }
+    }
+    ul > li {
+      color: #999;
     }
   }
 }

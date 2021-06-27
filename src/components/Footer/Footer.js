@@ -33,13 +33,13 @@ const Footer = () => {
             <div className='footerlist'>
               <ul>
                 <li>
-                  <span href='/'>Contact Us</span>
+                  <Link to='/'>Contact Us</Link>
                 </li>
                 <li>
-                  <span href='/'>Terms of Service</span>
+                  <Link to='/'>Terms of Service</Link>
                 </li>
                 <li>
-                  <span href='/'>Privacy Policy</span>
+                  <Link to='/'>Privacy Policy</Link>
                 </li>
               </ul>
             </div>

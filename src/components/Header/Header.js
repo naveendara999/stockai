@@ -5,7 +5,6 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
   NavLink,
 } from 'reactstrap';
 import logo from '../../Assets/images/Logo.png';

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Navbar, NavbarBrand, Nav, Collapse } from 'reactstrap';
-// import './App.css';
 import logo from './/Assets/images/Logo.png';
 import { Button } from './Button';
 

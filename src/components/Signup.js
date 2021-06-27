@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Row } from 'reactstrap';
 import logo from './../Assets/images/Logo.png';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Form, FormGroup, Input, FormText } from 'reactstrap';
 
 const Signup = () => {
   return (
