@@ -18,7 +18,7 @@ function TopPicks() {
   ];
 
   const [FavoritesList, setFavoritesList] = useState([]);
-  console.log(setFavoritesList)
+  console.log(setFavoritesList);
   return (
     <Container style={{ marginTop: '160px' }} className='toppicks'>
       <Tabs defaultActiveKey='Top picks in uptrend' id='StocklistTab'>
@@ -275,8 +275,8 @@ function TopPicks() {
         >
           <Col lg={12} className='py-5 open_positions'>
             <p>
-              <Link to='/toplist'> Upload transactions</Link>
-              so we can compute this value. You are 1-step away from it.
+              <Link to='/toplist'> Upload transactions</Link> {''}so we can
+              compute this value. You are 1-step away from it.
             </p>
           </Col>
         </Tab>

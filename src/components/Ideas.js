@@ -112,7 +112,7 @@ const Ideas = () => {
         <Tab eventKey='Grouped by Industry' title='Grouped by Industry'>
           <Col lg={12} className='trading_ideas py-3 px-3'>
             <Col className='offset-md-8'>
-              <Input />
+              <Input placeholder='Search' />
             </Col>
           </Col>
           <Table striped bordered responsive>
