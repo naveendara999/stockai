@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import hero from './/Assets/images/listeposter.png';
 import ai from './/Assets/images/aiimage.jpeg';
 import how from './/Assets/images/howitworks.png';
-import play from './/Assets/images/playicon.png';
+import Play from './/Assets/images/playicon.png';
+
+import ReactPlayer from 'react-player';
+
 function Helpsection() {
+  const [play, setplay] = useState(false);
   return (
     <div className='my-5'>
       <Container>
@@ -22,15 +26,47 @@ function Helpsection() {
             className=' mt-5 mt-md-0 order-md-0 px-md-3 px-0'
           >
             <div style={{ textAlign: 'right', height: '100%' }}>
+              {play && (
+                <div
+                  style={{
+                    position: 'relative',
+                    maxWidth: '1920px',
+                    maxHeight: '1080px',
+                    width: '100%',
+                    height: '100%',
+                    zIndex: '10000',
+                    // backgroundColor: 'rgb(0,0,0,.7)',
+                    // paddingTop: '56.25%',
+                  }}
+                  onClick={() => setplay(!play)}
+                >
+                  <ReactPlayer
+                    style={{
+                      position: 'fixed',
+                      top: '50%',
+                      left: '50%',
+                      transform: 'translate(-50%,-50%)',
+                      maxWidth: '1280px',
+                      maxHeight: '720px',
+                    }}
+                    width='100%'
+                    height='100%'
+                    url='https://www.youtube.com/watch?v=ysz5S6PUM-U'
+                    playing={play}
+                  />
+                </div>
+              )}
+
               <img
                 alt=''
                 src={hero}
                 style={{ objectFit: 'cover', height: '100%', width: '100%' }}
               />
               <img
+                onClick={() => setplay(!play)}
                 className='playicon  img-fluid wow fadeInUp animated'
                 alt=''
-                src={play}
+                src={Play}
               />
             </div>
           </Col>
@@ -51,32 +87,32 @@ function Helpsection() {
             </div>
 
             <div style={{ margin: '0', padding: '0', boxSizing: 'border-box' }}>
-              <li className='li'>
+              <li className='li animate__animated animate__fadeInDown'>
                 <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li'>
+              <li className='li animate__animated animate__fadeInDown'>
                 <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li'>
+              <li className='li animate__animated animate__fadeInDown'>
                 <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li'>
+              <li className='li animate__animated animate__fadeInDown'>
                 <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li'>
+              <li className='li animate__animated animate__fadeInDown'>
                 <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li'>
+              <li className='li animate__animated animate__fadeInDown'>
                 <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
@@ -103,32 +139,32 @@ function Helpsection() {
             </div>
 
             <div style={{ margin: '0', padding: '0', boxSizing: 'border-box' }}>
-              <li className='li'>
+              <li className='li animate__animated animate__fadeInDown'>
                 <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li'>
+              <li className='li animate__animated animate__fadeInDown'>
                 <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li'>
+              <li className='li animate__animated animate__fadeInDown'>
                 <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li'>
+              <li className='li animate__animated animate__fadeInDown'>
                 <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li'>
+              <li className='li animate__animated animate__fadeInDown'>
                 <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li'>
+              <li className='li animate__animated animate__fadeInDown'>
                 <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
@@ -191,32 +227,32 @@ function Helpsection() {
             </div>
 
             <div style={{ margin: '0', padding: '0', boxSizing: 'border-box' }}>
-              <li className='li'>
+              <li className='li animate__animated animate__fadeInDown'>
                 <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li'>
+              <li className='li animate__animated animate__fadeInDown'>
                 <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li'>
+              <li className='li animate__animated animate__fadeInDown'>
                 <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li'>
+              <li className='li animate__animated animate__fadeInDown'>
                 <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li'>
+              <li className='li animate__animated animate__fadeInDown'>
                 <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li'>
+              <li className='li animate__animated animate__fadeInDown'>
                 <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>

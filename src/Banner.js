@@ -14,7 +14,7 @@ const Banner = () => {
         >
           <div style={{ textAlign: 'center' }}>
             <h1
-              className='wow fadeInDown pt-4 pt-md-0'
+              className='animate__animated animate__fadeInDown pt-4 pt-md-0'
               style={{
                 marginBottom: '30px',
                 fontSize: '44px',
@@ -26,6 +26,7 @@ const Banner = () => {
               Buy in Uptrend. Ride it till it ends
             </h1>
             <p
+              className='animate__animated animate__fadeInDown'
               style={{
                 display: 'block',
                 paddingTop: '20px',
@@ -45,6 +46,8 @@ const Banner = () => {
         <div className='col-md-6 banner-col img-container p-0'>
           <div style={{ textAlign: 'right', height: '100%' }}>
             <img
+              className='animate__animated
+            animate__fadeInRight'
               alt=''
               src={hero}
               style={{ objectFit: 'cover', height: '100%', width: '100%' }}
