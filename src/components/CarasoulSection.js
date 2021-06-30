@@ -1,42 +1,8 @@
 import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 import hero from './../Assets/images/relation.png';
 import ai from './../Assets/images/aiimage.jpeg';
-
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: 'block', background: 'red' }}
-      onClick={onClick}
-    />
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: 'block', background: 'green' }}
-      onClick={onClick}
-    />
-  );
-}
-
-const settings = {
-  className: 'center',
-  centerMode: true,
-  infinite: true,
-  centerPadding: '60px',
-  slidesToShow: 1,
-  speed: 500,
-  nextArrow: <SampleNextArrow />,
-  prevArrow: <SamplePrevArrow />,
-};
 
 function CarasoulSection() {
   return (
@@ -47,45 +13,65 @@ function CarasoulSection() {
       >
         Top picks from the past
       </h2>
-      <div>
-        <Slider {...settings}>
-          <div>
-            <img
-              alt=''
-              src={hero}
-              style={{ maxWidth: '100%', overflow: 'hidden' }}
-            />
-          </div>
-          <div>
-            <img
-              alt=''
-              src={ai}
-              style={{ maxWidth: '100%', overflow: 'hidden' }}
-            />
-          </div>
-          <div>
-            <img
-              alt=''
-              src={hero}
-              style={{ maxWidth: '100%', overflow: 'hidden' }}
-            />
-          </div>
-          <div>
-            <img
-              alt=''
-              src={ai}
-              style={{ maxWidth: '100%', overflow: 'hidden' }}
-            />
-          </div>
-          <div>
-            <img
-              alt=''
-              src={hero}
-              style={{ maxWidth: '100%', overflow: 'hidden' }}
-            />
-          </div>
-        </Slider>
-      </div>
+      <Carousel
+        centerMode
+        dynamicHeight={600}
+        dots={false}
+        selectedItem={1}
+        showStatus={false}
+        showIndicators={false}
+        showThumbs={false}
+        centerSlidePercentage={60}
+      >
+        <div>
+          <img
+            src={hero}
+            alt=''
+            style={{ maxheight: '600px', objectFit: 'fill' }}
+          />
+          {/* <p className='legend'>Legend 1</p> */}
+        </div>
+        <div>
+          <img
+            src={ai}
+            alt=''
+            style={{ maxheight: '600px', objectFit: 'fill' }}
+          />
+          {/* <p className='legend'>Legend 2</p> */}
+        </div>
+        <div>
+          <img
+            src={ai}
+            alt=''
+            style={{ maxheight: '600px', objectFit: 'fill' }}
+          />
+          {/* <p className='legend'>Legend 2</p> */}
+        </div>
+        <div>
+          <img
+            src={ai}
+            alt=''
+            style={{ maxheight: '600px', objectFit: 'fill' }}
+          />
+          {/* <p className='legend'>Legend 2</p> */}
+        </div>
+        <div>
+          <img
+            src={ai}
+            alt=''
+            style={{ maxheight: '600px', objectFit: 'fill' }}
+          />
+          {/* <p className='legend'>Legend 2</p> */}
+        </div>
+        <div>
+          <img
+            src={hero}
+            alt=''
+            style={{ maxheight: '600px', objectFit: 'fill' }}
+          />
+          {/* <p className='legend'>Legend 3</p> */}
+        </div>
+      </Carousel>
     </div>
   );
 }

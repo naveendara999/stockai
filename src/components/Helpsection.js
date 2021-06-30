@@ -87,33 +87,63 @@ function Helpsection() {
             </div>
 
             <div style={{ margin: '0', padding: '0', boxSizing: 'border-box' }}>
-              <li className='li animate__animated animate__fadeInDown'>
-                <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
+              <li className='li' data-aos='fade-right'>
+                <FontAwesomeIcon
+                  icon={faCheckSquare}
+                  size='1x'
+                  className='i'
+                  data-aos='fade-down'
+                />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li animate__animated animate__fadeInDown'>
-                <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
+              <li className='li' data-aos='fade-right'>
+                <FontAwesomeIcon
+                  icon={faCheckSquare}
+                  size='1x'
+                  className='i'
+                  data-aos='fade-down'
+                />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li animate__animated animate__fadeInDown'>
-                <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
+              <li className='li' data-aos='fade-right'>
+                <FontAwesomeIcon
+                  icon={faCheckSquare}
+                  size='1x'
+                  className='i'
+                  data-aos='fade-down'
+                />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li animate__animated animate__fadeInDown'>
-                <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
+              <li className='li' data-aos='fade-right'>
+                <FontAwesomeIcon
+                  icon={faCheckSquare}
+                  size='1x'
+                  className='i'
+                  data-aos='fade-down'
+                />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li animate__animated animate__fadeInDown'>
-                <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
+              <li className='li' data-aos='fade-right'>
+                <FontAwesomeIcon
+                  icon={faCheckSquare}
+                  size='1x'
+                  className='i'
+                  data-aos='fade-down'
+                />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li animate__animated animate__fadeInDown'>
-                <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
+              <li className='li' data-aos='fade-right'>
+                <FontAwesomeIcon
+                  icon={faCheckSquare}
+                  size='1x'
+                  className='i'
+                  data-aos='fade-down'
+                />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
@@ -131,7 +161,8 @@ function Helpsection() {
           >
             <div style={{ textAlign: 'left' }}>
               <h2
-                className='wow fadeInLeft mb-3'
+                data-aos='fade-left'
+                className='t mb-3'
                 style={{ fontWeight: '700', color: ' #181f2a' }}
               >
                 Everyone has their own style of INVESTING.
@@ -139,33 +170,63 @@ function Helpsection() {
             </div>
 
             <div style={{ margin: '0', padding: '0', boxSizing: 'border-box' }}>
-              <li className='li animate__animated animate__fadeInDown'>
-                <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
+              <li className='li' data-aos='fade-right'>
+                <FontAwesomeIcon
+                  icon={faCheckSquare}
+                  size='1x'
+                  className='i'
+                  data-aos='fade-down'
+                />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li animate__animated animate__fadeInDown'>
-                <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
+              <li className='li' data-aos='fade-right'>
+                <FontAwesomeIcon
+                  icon={faCheckSquare}
+                  size='1x'
+                  className='i'
+                  data-aos='fade-down'
+                />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li animate__animated animate__fadeInDown'>
-                <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
+              <li className='li' data-aos='fade-right'>
+                <FontAwesomeIcon
+                  icon={faCheckSquare}
+                  size='1x'
+                  className='i'
+                  data-aos='fade-down'
+                />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li animate__animated animate__fadeInDown'>
-                <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
+              <li className='li' data-aos='fade-right'>
+                <FontAwesomeIcon
+                  icon={faCheckSquare}
+                  size='1x'
+                  className='i'
+                  data-aos='fade-down'
+                />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li animate__animated animate__fadeInDown'>
-                <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
+              <li className='li' data-aos='fade-right'>
+                <FontAwesomeIcon
+                  icon={faCheckSquare}
+                  size='1x'
+                  className='i'
+                  data-aos='fade-down'
+                />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li animate__animated animate__fadeInDown'>
-                <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
+              <li className='li' data-aos='fade-right'>
+                <FontAwesomeIcon
+                  icon={faCheckSquare}
+                  size='1x'
+                  className='i'
+                  data-aos='fade-down'
+                />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
@@ -183,6 +244,7 @@ function Helpsection() {
           >
             <div style={{ textAlign: 'right', height: '100%' }}>
               <img
+                data-aos='fade-down'
                 alt=''
                 src={ai}
                 style={{ objectFit: 'cover', height: '100%', width: '100%' }}
@@ -204,6 +266,7 @@ function Helpsection() {
           >
             <div style={{ textAlign: 'right', height: '100%' }}>
               <img
+                data-aos='fade-down'
                 alt=''
                 src={how}
                 style={{ objectFit: 'cover', height: '100%', width: '100%' }}
@@ -227,33 +290,63 @@ function Helpsection() {
             </div>
 
             <div style={{ margin: '0', padding: '0', boxSizing: 'border-box' }}>
-              <li className='li animate__animated animate__fadeInDown'>
-                <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
+              <li className='li' data-aos='fade-right'>
+                <FontAwesomeIcon
+                  icon={faCheckSquare}
+                  size='1x'
+                  className='i'
+                  data-aos='fade-down'
+                />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li animate__animated animate__fadeInDown'>
-                <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
+              <li className='li' data-aos='fade-right'>
+                <FontAwesomeIcon
+                  icon={faCheckSquare}
+                  size='1x'
+                  className='i'
+                  data-aos='fade-down'
+                />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li animate__animated animate__fadeInDown'>
-                <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
+              <li className='li' data-aos='fade-right'>
+                <FontAwesomeIcon
+                  icon={faCheckSquare}
+                  size='1x'
+                  className='i'
+                  data-aos='fade-down'
+                />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li animate__animated animate__fadeInDown'>
-                <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
+              <li className='li' data-aos='fade-right'>
+                <FontAwesomeIcon
+                  icon={faCheckSquare}
+                  size='1x'
+                  className='i'
+                  data-aos='fade-down'
+                />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li animate__animated animate__fadeInDown'>
-                <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
+              <li className='li' data-aos='fade-right'>
+                <FontAwesomeIcon
+                  icon={faCheckSquare}
+                  size='1x'
+                  className='i'
+                  data-aos='fade-down'
+                />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
-              <li className='li animate__animated animate__fadeInDown'>
-                <FontAwesomeIcon icon={faCheckSquare} size='1x' className='i' />
+              <li className='li' data-aos='fade-right'>
+                <FontAwesomeIcon
+                  icon={faCheckSquare}
+                  size='1x'
+                  className='i'
+                  data-aos='fade-down'
+                />
                 View daily uptrend stocks
                 <span>Top stocks in uptrend each day that you can buy</span>
               </li>
