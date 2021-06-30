@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import hero from './/Assets/images/listeposter.png';
-import ai from './/Assets/images/aiimage.jpeg';
-import how from './/Assets/images/howitworks.png';
-import Play from './/Assets/images/playicon.png';
+import hero from './../Assets/images/listeposter.png';
+import ai from './../Assets/images/aiimage.jpeg';
+import how from './../Assets/images/howitworks.png';
+import Play from './../Assets/images/playicon.png';
 
 import ReactPlayer from 'react-player';
 
@@ -64,7 +64,7 @@ function Helpsection() {
               />
               <img
                 onClick={() => setplay(!play)}
-                className='playicon  img-fluid wow fadeInUp animated'
+                className='playicon  img-fluid '
                 alt=''
                 src={Play}
               />

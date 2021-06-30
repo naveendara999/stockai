@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, NavbarBrand, Nav, Collapse } from 'reactstrap';
-import logo from './/Assets/images/Logo.png';
-import { Button } from './Button';
+import logo from './../Assets/images/Logo.png';
+import { Button } from '../components/Button';
 
 export const Headers = () => {
   return (

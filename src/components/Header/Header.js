@@ -9,7 +9,7 @@ import {
 } from 'reactstrap';
 import logo from '../../Assets/images/Logo.png';
 import menu from '../../Assets/images/menu.svg';
-import { Button } from '../../Button';
+import { Button } from '../Button';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
