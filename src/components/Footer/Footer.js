@@ -4,6 +4,12 @@ import { Link } from 'react-router-dom';
 import { faFax } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from '../../Assets/images/Logo.png';
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+} from 'react-icons/fa';
 const Footer = () => {
   return (
     <div className='footer'>
@@ -56,22 +62,15 @@ const Footer = () => {
           <Col md={6}>
             <div className='socialmedia'>
               <ul>
+                <li>{<FaFacebookF />}</li>
                 <li>
-                  {/* <Link>
-                    <FontAwesomeIcon icon={faFax} />
-                  </Link> */}
+                  <FaTwitter />
                 </li>
                 <li>
-                  <FontAwesomeIcon icon={faFax} />
+                  <FaLinkedinIn />
                 </li>
                 <li>
-                  <FontAwesomeIcon icon={faFax} />
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faFax} />
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faFax} />
+                  <FaInstagram />
                 </li>
               </ul>
             </div>
