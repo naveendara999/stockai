@@ -1,8 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import { faFax } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from '../../Assets/images/Logo.png';
 import {
   FaFacebookF,

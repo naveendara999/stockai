@@ -14,7 +14,7 @@ import Ideas from './components/Ideas';
 import Transaction from './components/Transaction';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-
+import { StockDetails } from './components/StockDetails';
 
 // ..
 AOS.init({
@@ -30,8 +30,8 @@ AOS.init({
 
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
   offset: 20, // offset (in px) from the original trigger point
-  delay: 500, // values from 0 to 3000, with step 50ms
-  duration: 1000, // values from 0 to 3000, with step 50ms
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 1600, // values from 0 to 3000, with step 50ms
   easing: 'ease', // default easing for AOS animations
   once: true, // whether animation should happen only once - while scrolling down
   mirror: true, // whether elements should animate out while scrolling past them
@@ -49,23 +49,30 @@ function App() {
           <Helpsection />
           <Footer />
         </Route>
-        <Route path='/login'>
-          <Login />
-        </Route>
-        <Route path='/signup'>
-          <Signup />
-        </Route>
+      </Switch>
+
+      <Route path='/login'>
+        <Login />
+      </Route>
+      <Route path='/signup'>
+        <Signup />
+      </Route>
+      <HomeHeaders />
+      <Switch>
         <Route path='/toplist'>
-          <HomeHeaders />
           <TopPicks />
         </Route>
         <Route path='/transaction'>
-          <HomeHeaders />
+          {/* <HomeHeaders /> */}
           <Transaction />
         </Route>
         <Route path='/ideas'>
-          <HomeHeaders />
+          {/* <HomeHeaders /> */}
           <Ideas />
+        </Route>
+        <Route path='/stockDetails/:stock'>
+          {/* <HomeHeaders /> */}
+          <StockDetails />
         </Route>
       </Switch>
     </Router>

@@ -1,8 +1,10 @@
 import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import hero from './../Assets/images/relation.png';
-import ai from './../Assets/images/aiimage.jpeg';
+import slide1 from './../Assets/images/slide1.png';
+import slide2 from './../Assets/images/slide2.png';
+import slide3 from './../Assets/images/slide3.png';
+import slide4 from './../Assets/images/slide4.png';
 
 function CarasoulSection() {
   return (
@@ -16,16 +18,16 @@ function CarasoulSection() {
       <Carousel
         centerMode
         dynamicHeight={600}
-        dots={false}
+        // dots={false}
         selectedItem={1}
         showStatus={false}
-        showIndicators={false}
+        // showIndicators={false}
         showThumbs={false}
         centerSlidePercentage={60}
       >
         <div>
           <img
-            src={hero}
+            src={slide1}
             alt=''
             style={{ maxheight: '600px', objectFit: 'fill' }}
           />
@@ -33,7 +35,7 @@ function CarasoulSection() {
         </div>
         <div>
           <img
-            src={ai}
+            src={slide2}
             alt=''
             style={{ maxheight: '600px', objectFit: 'fill' }}
           />
@@ -41,7 +43,7 @@ function CarasoulSection() {
         </div>
         <div>
           <img
-            src={ai}
+            src={slide3}
             alt=''
             style={{ maxheight: '600px', objectFit: 'fill' }}
           />
@@ -49,7 +51,7 @@ function CarasoulSection() {
         </div>
         <div>
           <img
-            src={ai}
+            src={slide4}
             alt=''
             style={{ maxheight: '600px', objectFit: 'fill' }}
           />
@@ -57,7 +59,7 @@ function CarasoulSection() {
         </div>
         <div>
           <img
-            src={ai}
+            src={slide2}
             alt=''
             style={{ maxheight: '600px', objectFit: 'fill' }}
           />
@@ -65,7 +67,7 @@ function CarasoulSection() {
         </div>
         <div>
           <img
-            src={hero}
+            src={slide3}
             alt=''
             style={{ maxheight: '600px', objectFit: 'fill' }}
           />
