@@ -16,7 +16,7 @@ function TopPicks() {
     "Industry",
     "Action",
   ];
-
+  // fdg
   const [FavoritesList, setFavoritesList] = useState([]);
   console.log(setFavoritesList);
   return (
