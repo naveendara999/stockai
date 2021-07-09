@@ -5,6 +5,7 @@ import { scaleTime } from 'd3-scale';
 import { curveMonotoneX } from 'd3-shape';
 
 import { ChartCanvas, Chart, ZoomButtons } from 'react-stockcharts';
+
 import { AreaSeries } from 'react-stockcharts/lib/series';
 import { XAxis, YAxis } from 'react-stockcharts/lib/axes';
 import { fitWidth } from 'react-stockcharts/lib/helper';
