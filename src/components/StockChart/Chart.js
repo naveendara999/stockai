@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { scaleTime } from 'd3-scale';
 import { curveMonotoneX } from 'd3-shape';
 
-import { ChartCanvas, Chart, ZoomButtons } from 'react-stockcharts';
+import { ChartCanvas, Chart } from 'react-stockcharts';
 
 import { AreaSeries } from 'react-stockcharts/lib/series';
 import { XAxis, YAxis } from 'react-stockcharts/lib/axes';
@@ -36,7 +36,7 @@ class AreaChart extends React.Component {
         xScale={scaleTime()}
         xExtents={[new Date(2011, 0, 1), new Date(2013, 0, 2)]}
       >
-        <ZoomButtons />
+        {/* <ZoomButtons /> */}
         <Chart id={0} yExtents={(d) => d.close}>
           <defs>
             <linearGradient id='MyGradient' x1='0' y1='100%' x2='0' y2='0%'>

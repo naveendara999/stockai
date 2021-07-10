@@ -57,24 +57,24 @@ function App() {
       <Route path='/signup'>
         <Signup />
       </Route>
-      <HomeHeaders />
-      <Switch>
+      {/* <HomeHeaders /> */}
+      {/* <Switch> */}
         <Route path='/toplist'>
           <TopPicks />
         </Route>
         <Route path='/transaction'>
-          {/* <HomeHeaders /> */}
+          <HomeHeaders />
           <Transaction />
         </Route>
         <Route path='/ideas'>
-          {/* <HomeHeaders /> */}
+          <HomeHeaders />
           <Ideas />
         </Route>
         <Route path='/stockDetails/:stock'>
-          {/* <HomeHeaders /> */}
+          <HomeHeaders />
           <StockDetails />
         </Route>
-      </Switch>
+      {/* </Switch> */}
     </Router>
   );
 }
