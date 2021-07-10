@@ -201,7 +201,7 @@ export const StockDetails = () => {
               <div
                 style={{
                   backgroundColor: '#fff',
-                  height: '600px',
+                  height: '500px',
                 }}
                 className='shadow-lg'
               >

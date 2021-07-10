@@ -58,25 +58,24 @@ function App() {
         <Signup />
       </Route>
       {/* <HomeHeaders /> */}
-      <Switch>
-        <Route path="/toplist">
-          <HomeHeaders />
-          <TopPicks />
-          <Footer />
-        </Route>
-        <Route path="/transaction">
-          <HomeHeaders />
-          <Transaction />
-        </Route>
-        <Route path="/ideas">
-          <HomeHeaders />
-          <Ideas />
-        </Route>
-        <Route path="/stockDetails/:stock">
-          <HomeHeaders />
-          <StockDetails />
-        </Route>
-      </Switch>
+      {/* <Switch> */}
+      <Route path="/toplist">
+        <TopPicks />
+        <Footer />
+      </Route>
+      <Route path="/transaction">
+        <HomeHeaders />
+        <Transaction />
+      </Route>
+      <Route path="/ideas">
+        <HomeHeaders />
+        <Ideas />
+      </Route>
+      <Route path="/stockDetails/:stock">
+        <HomeHeaders />
+        <StockDetails />
+      </Route>
+      {/* </Switch> */}
     </Router>
   );
 }
