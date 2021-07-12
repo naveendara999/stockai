@@ -15,6 +15,7 @@ import Transaction from "./components/Transaction";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import { StockDetails } from "./components/StockDetails";
+import { useDispatch, useSelector } from "react-redux";
 
 // ..
 AOS.init({
@@ -39,6 +40,8 @@ AOS.init({
 });
 
 function App() {
+  const { user: currentUser } = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
   return (
     <Router>
       <Switch>
@@ -60,8 +63,8 @@ function App() {
       {/* <HomeHeaders /> */}
       {/* <Switch> */}
       <Route path="/toplist">
+        <HomeHeaders />
         <TopPicks />
-        <Footer />
       </Route>
       <Route path="/transaction">
         <HomeHeaders />

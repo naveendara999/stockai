@@ -25,8 +25,8 @@ const Login = (props) => {
   const form = useRef();
   const checkBtn = useRef();
 
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [emailid, setemailid] = useState("");
+  const [password_, setPassword_] = useState("");
   const [loading, setLoading] = useState(false);
 
   const { isLoggedIn } = useSelector((state) => state.auth);
@@ -34,25 +34,26 @@ const Login = (props) => {
 
   const dispatch = useDispatch();
 
-  const onChangeUsername = (e) => {
-    const username = e.target.value;
-    setUsername(username);
+  const onChangeemailid = (e) => {
+    const emailid = e.target.value;
+    setemailid(emailid);
   };
 
   const onChangePassword = (e) => {
-    const password = e.target.value;
-    setPassword(password);
+    const password_ = e.target.value;
+    setPassword_(password_);
   };
 
   const handleLogin = (e) => {
     e.preventDefault();
 
-    setLoading(true);
+    // setLoading(true);
 
     form.current.validateAll();
+    console.log(emailid, password_);
 
-    if (checkBtn.current.context._errors.length === 0) {
-      dispatch(login(username, password))
+    if (emailid.length > 0) {
+      dispatch(login(emailid, password_))
         .then(() => {
           props.history.push("/toplist");
           window.location.reload();
@@ -87,9 +88,9 @@ const Login = (props) => {
                 id="exampleEmail"
                 type="text"
                 className="form-control"
-                name="username"
-                value={username}
-                onChange={onChangeUsername}
+                name="emailid"
+                value={emailid}
+                onChange={onChangeemailid}
                 validations={[required]}
                 placeholder="Email address"
               />
@@ -97,14 +98,14 @@ const Login = (props) => {
 
             <div className="form-group mt-3">
               <Input
-                id="examplePassword"
-                type="password"
+                id="examplePassword_"
+                type="password_"
                 className="form-control"
-                name="password"
-                value={password}
+                name="password_"
+                value={password_}
                 onChange={onChangePassword}
                 validations={[required]}
-                placeholder="Password "
+                placeholder="Password_ "
               />
             </div>
 
@@ -174,10 +175,10 @@ const Login = (props) => {
             </FormGroup>
             <FormGroup className="mt-3">
               <Input
-                type="password"
-                name="password"
-                id="examplePassword"
-                placeholder="Password "
+                type='password_'
+                name='password_'
+                id='examplePassword_'
+                placeholder='Password_ '
               />
             </FormGroup>
             <FormGroup check className="mt-3">
@@ -186,23 +187,12 @@ const Login = (props) => {
                 Remember me
               </Label>
             </FormGroup>
-<<<<<<< HEAD
-          </Form>
-          <Link to="/toplist">
-            <Button className="mt-3" color="primary" size="lg">
-              Submit
-            </Button>
-          </Link>
-          <p className="agreeto">
-            <Link to="https://www.MyStock.ai/terms.html" target="_blank">
-=======
           </Form> */}
           {/* <Button className='mt-3' color='primary' size='lg'>
             Submit
           </Button>
           <p className='agreeto'>
             <Link to='https://www.liste.ai/terms.html' target='_blank'>
->>>>>>> 96d20a462facb65aba3ce7f8fe9edcdef6945086
               Terms
             </Link>
             By clicking Sign In, you agree to our and have read and acknowledge

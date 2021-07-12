@@ -19,8 +19,8 @@ const getStockDetails = () => {
 };
 
 export default {
-  getPublicContent,
-  getUserBoard,
-  getModeratorBoard,
-  getAdminBoard,
+  getToplist,
+  getTransaction,
+  getIdeas,
+  getStockDetails,
 };
